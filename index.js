@@ -10,7 +10,7 @@ app.get('/',function(req, res){
     res.render('home');
 });
 
-const port = 3000 || process.env.port;
+const port = 3000 || process.env.PORT;
 app.listen(port, ()=>{
     console.log(`Server has been started at port ${port}`)
 })
