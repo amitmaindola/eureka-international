@@ -1,87 +1,24 @@
-<style>
-    * {box-sizing: border-box}
-    body {font-family: Verdana, sans-serif; margin:0}
-    .mySlides {display: none;
-        justify-content: center;
-    }
-    img {vertical-align: middle;}
-    
-    /* Slideshow container */
-    .slideshow-container {
-       max-width: 1000px;
-       position: relative;
-       margin: auto;
-    }
-    /* Next & previous buttons */
-    .prev, .next {
-       cursor: pointer;
-       position: absolute;
-       top: 50%;
-       width: auto;
-       padding: 16px;
-       margin-top: -22px;
-       color: gold;
-       font-weight: bold;
-       font-size: 18px;
-       transition: 0.6s ease;
-       border-radius: 0 3px 3px 0;
-       user-select: none;
-    }
-    /* Position the "next button" to the right */
-    .next {
-       right: 0;
-       border-radius: 3px 0 0 3px;
 
-    }
-    /* On hover, add a black background color with a little bit seethrough */
-    .prev:hover, .next:hover {
-       background-color: rgba(0,0,0,0.8);
-    }
-    /* Caption text */
-    .text {
-       color: black;
-       font-size: 15px;
-       padding: 8px 12px;
-       position: absolute;
-       bottom: 8px;
-       width: 100%;
-       text-align: center;
-    }
-    /* The dots/bullets/indicators */
-    .dot {
-       cursor: pointer;
-       height: 15px;
-       width: 15px;
-       margin: 0 2px;
-       background-color: #bbb;
-       border-radius: 50%;
-       display: inline-block;
-       transition: background-color 0.6s ease;
-    }
-    .active, .dot:hover {
-       background-color: #717171;
-    } .mycard{
-        margin: 0 30% 0 30%;
-    }
- </style>
-</head>
-<body>
- <div class="slideshow-container">
-    <div class="mySlides fade ">
-       <div style="max-width: 300px;" class="mycard rounded my-2 overflow-hidden border-2">
-        <img class="w-full p-5" src="https://static.wixstatic.com/media/e04957_935675e1b39f4bf797b00cb1876ce244~mv2.jpg/v1/fill/w_376,h_375,al_c,lg_1,q_80,enc_auto/Screen%2520Shot%25202020-10-12%2520at%252011_41_edited.jpg" alt="Mountain">
-        <div class="px-6 pt-4 pb-8">
-          <div class="font-bold text-xl mb-2">COOLING TOWER FAN ENERGY REDUCTION</div>
-          <p class="text-gray-700 text-base">
+ <div class="shadow-xl my-10 mx-5 md:mx-20 lg:mx-40 flex flex-row" style="background-color: white;">
+   <a class="prev flex-grow-0 m-auto" onclick="plusSlides(-1)">❮</a>
+   <div style="flex-grow: 1;">
+      <h3 class="text-3xl font-bold  text-center pt-8">Our Products</h3>
+      <p class="text-center text-xl mb-8">(Novel Solutions which will help you immensely)</p>
+       <div class="mySlides fade pb-10">
+      <div style="max-width: 400px;" class="mycard rounded overflow-hidden border-2">
+      <img class="w-full p-5" src="https://static.wixstatic.com/media/e04957_935675e1b39f4bf797b00cb1876ce244~mv2.jpg/v1/fill/w_376,h_375,al_c,lg_1,q_80,enc_auto/Screen%2520Shot%25202020-10-12%2520at%252011_41_edited.jpg" alt="Mountain">
+      <div class="px-6 pt-4 pb-8">
+         <div class="font-bold text-xl mb-2">COOLING TOWER FAN ENERGY REDUCTION</div>
+         <p class="text-gray-700 text-base">
             Guaranteed 40% reduction in AHU energy consumption.
-          </p>
-          <br>
-          <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded " href="">Know More</a>
-        </div>
+         </p>
+         <br>
+         <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded " href="">Know More</a>
+      </div>
       </div>
        </div>
-       <div class="mySlides fade">
-          <div style="max-width: 300px;" class="mycard rounded my-2 overflow-hidden border-2">
+       <div class="mySlides fade pb-10">
+          <div style="max-width: 400px;" class="mycard rounded my-2 overflow-hidden border-2">
             <img class="w-full p-5" src="https://static.wixstatic.com/media/e04957_3657324508af48deb5dad814ee8e7a60~mv2.png/v1/fill/w_376,h_375,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screen%20Shot%202020-10-12%20at%2011_59_43%20AM_pn.png" alt="River">
             <div class="px-6 pt-4 pb-8">
               <div class="font-bold text-xl mb-2">CHILLER ENERGY REDUCTION</div>
@@ -93,8 +30,8 @@
             </div>
           </div>
        </div>
-       <div class="mySlides fade">
-          <div style="max-width: 300px;" class=" mycard rounded my-2 overflow-hidden border-2">
+       <div class="mySlides fade pb-10">
+          <div style="max-width: 400px;" class=" mycard rounded my-2 overflow-hidden border-2">
             <img class="w-full p-5" src="https://static.wixstatic.com/media/e04957_8e96723bc9844cf2bd061dd1ad57200e~mv2.png/v1/fill/w_376,h_375,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screen%20Shot%202020-10-12%20at%201_16_56%20PM.png" alt="Forest">
             <div class="px-6 pt-4 pb-8">
               <div class="font-bold text-xl mb-2">AHU ENERGY REDUCTION</div>
@@ -106,8 +43,8 @@
             </div>
           </div>
        </div>
-       <a class="prev" onclick="plusSlides(-1)">❮</a>
-       <a class="next" onclick="plusSlides(1)">❯</a>
+   </div>
+   <a class="next flex-grow-0 m-auto" onclick="plusSlides(1)">❯</a>
  </div>
  <br>
  <div style="text-align:center">

@@ -10,7 +10,6 @@ body {
     overflow: hidden;
     background: linear-gradient(150deg, #e6d3f9 0%, #e6d3f9 50%, #cea0f1 50%, #cea0f1 100%);
   }
-  
   .open-walkthrough {
     border: 0;
     background: #5da3f2;
